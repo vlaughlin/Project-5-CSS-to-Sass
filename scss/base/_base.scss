@@ -11,20 +11,24 @@ body {
 
 /*Links*/
 
-a:link {
-   
-	text-decoration: none;
-	font-size: 18px;
-}
-/* Unvisited Links */
-a:link {
-	color: black;
-}
-/* Visited Links */
-a:visited {
-	color: coral;
-}
-/* Selected Links */
-a:active {
-	color: cadetblue;
-}
+	a {
+
+		&:link {
+
+			text-decoration: none;
+			font-size: 18px;
+		}
+		/* Unvisited Links */
+		&:link {
+			color: black;
+		}
+		/* Visited Links */
+		&:visited {
+			color: coral;
+		}
+		/* Selected Links */
+		&:active {
+			color: cadetblue;
+		}
+
+			}
