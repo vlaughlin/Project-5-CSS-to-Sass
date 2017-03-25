@@ -1,0 +1,21 @@
+/*Footer*/
+
+.footer {
+    @extend %centered;
+	display: none;
+}
+
+.studentname-footer {
+	display: inline-block;
+	float: left;
+}
+.back-to-top {
+	display: inline-block;
+	float: right;
+	list-style: none;
+}
+
+.line-separator {
+	height: 1px;
+	border-bottom: 1px solid #c4c2c2;
+}
