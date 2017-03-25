@@ -1,0 +1,30 @@
+ /* Base Element Styles */
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Alice', serif;
+	line-height: 1.5;
+	color: #000;
+	background-color: #ceede1;
+}
+
+/*Links*/
+
+a:link {
+   
+	text-decoration: none;
+	font-size: 18px;
+}
+/* Unvisited Links */
+a:link {
+	color: black;
+}
+/* Visited Links */
+a:visited {
+	color: coral;
+}
+/* Selected Links */
+a:active {
+	color: cadetblue;
+}
