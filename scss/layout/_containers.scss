@@ -1,34 +1,33 @@
 /* ---- Layout Containers ---- */
 
-
+h3 {
+@extend %centered;
+}
 
 p.introduction {
-	text-align: justify;
+	@extend %justified;
 	padding: 2%;
-    color:dimgrey;
-    
+    color:$color-text-intro;
+
 }
 .portfolio {
-	background: #fff;
+	background: $color-container;
 	display: inline-block;
 }
 .portfolio-title {
-	text-align: center;
+	@extend %centered;
 }
 
 .p {
-    
-    text-align: justify;
-    
-    
+	@extend %justified;
 }
 p.contact {
-	text-align: justify;
+		@extend %justified;
     padding:10%;
 }
 p.phone {
-	text-align: center;
+	@extend %centered;
 }
 p.e-mail {
-	text-align: center;
+	@extend %centered;
 }
