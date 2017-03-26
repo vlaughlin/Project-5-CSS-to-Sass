@@ -1,10 +1,5 @@
 /*Footer*/
 
-.footer {
-    @extend %centered;
-	display: none;
-}
-
 .studentname-footer {
 	display: inline-block;
 	float: left;
@@ -14,8 +9,10 @@
 	float: right;
 	list-style: none;
 }
-
+.footer-nav {
+	display: none;
+}
 .line-separator {
 	height: 1px;
-	border-bottom: 1px solid #c4c2c2;
+	border-bottom: 1px solid $color-separator;
 }
