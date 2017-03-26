@@ -2,48 +2,36 @@
 /*Base Layout Styles*/
 
 .main-header {
-    @extend %centered;
+ @extend %centered;
 }
 
 
 /* ---- Navigation ---- */
-.name a {
-	font-size: 1.25em;
-	margin: 0;
-	font-size: 25px;
-	
+
+.main-nav {
+
+  &-nav li {
+  	background: $color-navigation ;
+    margin: 5px;
+  	list-style: none;
+  	max-width: 90%;
+ }
+
+
+  &-nav a {
+  	color: $color-link-default ;
+  	text-transform: uppercase;
+  }
+  &-nav a:hover {
+  	color: $color-link-default ;
 }
-.main-nav li {
-	background: #fff;
-	margin: 5px;
-	list-style: none;
-	max-width: 90%;
-}
-.name a,.main-nav {
-	display: block;
-    padding: 10px 1px;
-	text-decoration: none;
-}
-.main-nav a {
-	color: #000;
-	text-transform: uppercase;
-}
-.main-nav a:hover {
-	color: #000;
 }
 
-/*Images*/
-.student-picture {
-	display: block;
-	max-width: 60%;
-	margin-left: auto;
-	margin-right: auto
+.name a {
+  @include text(25px,$weight: bold, $color: $color-text-default) ;
+   margin: 0;
 }
-img {
-	max-width: 100%;
-	display: block;
-	margin-left: -20px
-}
-li {
-	list-style: none;
+
+.name a,.main-nav {
+	@extend %headercontent;
 }
