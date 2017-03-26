@@ -2,16 +2,17 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
+	@include text (18px, $l-height: 1.5, $weight: normal, $color: $color-text-default);
 	font-family: 'Alice', serif;
-	line-height: 1.5;
-	color: #000;
-	background-color: #ceede1;
+	background-color: $color-background;
 }
 
 /*Links*/
 
-	a {
+
+a {
 
 		&:link {
 
@@ -20,15 +21,18 @@ body {
 		}
 		/* Unvisited Links */
 		&:link {
-			color: black;
+			color: $color-text-intro;
 		}
 		/* Visited Links */
 		&:visited {
-			color: coral;
+			color: $color-link-visited;
 		}
 		/* Selected Links */
 		&:active {
-			color: cadetblue;
+			color: $color-link-active;
 		}
 
 			}
+
+
+
