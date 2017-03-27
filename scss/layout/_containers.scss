@@ -1,33 +1,52 @@
 /* ---- Layout Containers ---- */
 
 h3 {
-@extend %centered;
+	@extend %centered;
 }
 
 p.introduction {
-	@extend %justified;
+	
+    @extend %justified;
 	padding: 2%;
-    color:$color-text-intro;
-
+	color: $color-text-intro;
+	
+     @include tablet {
+		float: left;
+		width: 47.5%
+	}
+	
+    @include desktop {
+		float: left;
+		font-size: 17px;
+		text-align: justify;
+	}
 }
+
 .portfolio {
 	background: $color-container;
 	display: inline-block;
 }
+
 .portfolio-title {
 	@extend %centered;
 }
 
 .p {
 	@extend %justified;
+	@include desktop {
+		text-align: justify;
+	}
 }
+
 p.contact {
-		@extend %justified;
-    padding:10%;
+	@extend %justified;
+	padding: 10%;
 }
+
 p.phone {
 	@extend %centered;
 }
+
 p.e-mail {
 	@extend %centered;
 }
