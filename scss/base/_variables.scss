@@ -25,5 +25,17 @@ $color-link-active  : $cadetblue;
 
 // Media query breakpoints
 
-$tablet: '(max-width: 768px)';
-$desktop: '(max-width: 1024px)';
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
