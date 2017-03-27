@@ -1,37 +1,67 @@
-
 /*Base Layout Styles*/
 
 .main-header {
- @extend %centered;
+	@extend %centered;
 }
 
 
 /* ---- Navigation ---- */
 
 .main-nav {
+	&-nav li {
+		background: $color-navigation;
+		margin: 5px;
+		list-style: none;
+		max-width: 90%;
+     
+        @include tablet {
+			display: inline-block;
+			margin-right: 1%;
+			margin-left: 2%;
+			background: none;
+            text-align: center;
+		}
+    }
+		@include desktop {
+			display: inline-block;
+			float: right;
+			min-width: 350px;
+		}
+		
+	
+	&-nav a {
+		color: $color-link-default;
+		text-transform: uppercase;
+	}
+	&-nav a:hover {
+		color: $color-link-default;
+	}
+	
+	.name a {
+		@include text(25px, $weight: bold, $color: $color-text-default);
+		margin: 0;
+        
+	 @include desktop {
+			float: left;
+			margin: 0 1%;
+			padding: 0 2px;
+		}
+	   
+	}
+	.name a,
+	.main-nav {
+		@extend %headercontent;
+        
+        
+	}
 
-  &-nav li {
-  	background: $color-navigation ;
-    margin: 5px;
-  	list-style: none;
-  	max-width: 90%;
- }
 
 
-  &-nav a {
-  	color: $color-link-default ;
-  	text-transform: uppercase;
-  }
-  &-nav a:hover {
-  	color: $color-link-default ;
-}
-}
 
-.name a {
-  @include text(25px,$weight: bold, $color: $color-text-default) ;
-   margin: 0;
-}
-
-.name a,.main-nav {
-	@extend %headercontent;
+.profile {
+	
+    @include desktop {
+		margin-top: 100px;
+	}
+    }
 }
