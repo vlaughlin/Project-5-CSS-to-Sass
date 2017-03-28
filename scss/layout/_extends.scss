@@ -17,3 +17,13 @@
 	padding: 10px 1px;
 	text-decoration: none;
 }
+
+//Clearfix
+
+%clearfix {
+&:after  {
+  content: "";
+  display: table;
+  clear: both;
+}
+}
