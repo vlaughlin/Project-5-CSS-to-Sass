@@ -1,11 +1,12 @@
 /*Images*/
 
 .student-picture {
+    
 	display: block;
 	max-width: 60%;
 	margin-left: auto;
 	margin-right: auto;
-	
+    
     @include tablet {
 		float: right;
 		display: inline-block;
