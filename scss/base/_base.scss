@@ -5,12 +5,10 @@
  }
  
  body {
- 	
-     @include text (18px, $l-height: 1.5, $weight: normal, $color: $color-text-default);
+ 	@include text (18px, $l-height: 1.5, $weight: normal, $color: $color-text-default);
  	font-family: 'Alice', serif;
  	background-color: $color-background;
- 	
-     @include tablet {
+ 	@include tablet {
  		padding-top: 5px;
  	}
  }

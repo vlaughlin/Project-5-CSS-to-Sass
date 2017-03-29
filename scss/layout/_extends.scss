@@ -13,17 +13,9 @@
 //Header Student Name and Main Navigation
 
 %headercontent {
-	display: block;
+    
+    display: block;
 	padding: 10px 1px;
 	text-decoration: none;
 }
 
-//Clearfix
-
-%clearfix {
-&:after  {
-  content: "";
-  display: table;
-  clear: both;
-}
-}
