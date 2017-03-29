@@ -51,19 +51,22 @@ a {
   color: #000;
   text-transform: uppercase; }
 .main-nav-nav a:hover {
-  color: #000; }
-.main-nav .name a {
+  background-color: #A9B2C3; }
+
+.name a {
   font-size: 25px;
   font-weight: bold;
   color: #000;
   margin: 0; }
-  @media (min-width: 1024px) {
-    .main-nav .name a {
-      float: left;
-      margin: 0 1%;
-      padding: 0 2px; } }
+
 @media (min-width: 1024px) {
-  .main-nav .profile {
+  .name {
+    float: left;
+    margin: 0 1%;
+    padding: 0 2px; } }
+
+@media (min-width: 1024px) {
+  .profile {
     margin-top: 100px; } }
 
 /* ---- Layout Containers ---- */
@@ -77,16 +80,20 @@ p.introduction {
   @media (min-width: 1024px) {
     p.introduction {
       float: left;
-      font-size: 17px;
-      text-align: justify; } }
+      font-size: 17px; } }
 
 .portfolio {
   background: #fff;
   display: inline-block; }
 
-@media (min-width: 1024px) {
-  .p {
-    text-align: justify; } }
+.p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: normal;
+  color: #000; }
+  @media (min-width: 1024px) {
+    .p {
+      text-align: justify; } }
 
 p.contact {
   padding: 10%; }
@@ -122,8 +129,8 @@ ul.footer-nav {
 p.introduction, .p, p.contact {
   text-align: justify; }
 
-.main-nav .name a,
-.main-nav .main-nav {
+.name a,
+.main-nav {
   display: block;
   padding: 10px 1px;
   text-decoration: none; }

@@ -18,7 +18,7 @@ p.introduction {
     @include desktop {
 		float: left;
 		font-size: 17px;
-		text-align: justify;
+		
 	}
 }
 
@@ -32,6 +32,8 @@ p.introduction {
 }
 
 .p {
+    
+    @include text (18px, $l-height: 1.5, $weight: normal, $color: $color-text-default);
 	@extend %justified;
 	@include desktop {
 		text-align: justify;
